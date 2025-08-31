@@ -1,7 +1,13 @@
+import HeroSection from "./components/HeroSection";
+import Navbar from "./components/Navbar";
+
 function App() {
     return (
         <>
-            <div className="bg-red-200 text-black">Hello</div>
+            <div className="bg-neutral-100">
+                <Navbar />
+                <HeroSection />
+            </div>
         </>
     );
 }

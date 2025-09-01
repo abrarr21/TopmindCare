@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { cn } from "../utils/cn";
-import Button from "./Button";
+import { cn } from "../../utils/cn";
+import Button from "../Button";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -50,7 +50,7 @@ const Navbar = () => {
                         onClick={() => setOpen(!open)}
                         className="rounded-lg p-2 transition hover:bg-gray-800"
                     >
-                        {/* {open ? <X size={24} /> : <Menu size={24} />} */}
+                        {open ? "Close" : "Open"}
                         opn
                     </Button>
                 </div>

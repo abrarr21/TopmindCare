@@ -20,7 +20,7 @@ const Button: React.FC<ButtonProps> = ({
     const variantClasses: Record<ButtonVariant, string> = {
         primary: "bg-violet-700 hover:bg-violet-800 text-white",
         secondary: "bg-green-400 hover:bg-green-500 text-white",
-        tertiary: "bg-green-200 hover:bg-green-500 text-white",
+        tertiary: "bg-white hover:bg-neutral-100 text-purple-800",
     };
 
     const buttonClasses = `${baseClasses} ${variantClasses[variant]} ${className}`;

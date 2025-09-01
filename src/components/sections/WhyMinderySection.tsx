@@ -1,25 +1,5 @@
-import InfoCards from "./InfoCards";
-
-const Cards = [
-    {
-        badge: "Story Meditations",
-        title: "Guided Adventures",
-        description:
-            "Short, age-wise journeys that help kids calm their bodies and name their feelings.",
-    },
-    {
-        badge: "Anytime Calm",
-        title: "Tools for Big Feelings",
-        description:
-            "Quick reset audios for anger, worry, pre-exams jitters, and bedtime battles.",
-    },
-    {
-        badge: "Parent Hub",
-        title: "Guilded & Routines",
-        description:
-            "Weekly tips, printable charts, and simple routines you can use at home or school.",
-    },
-];
+import { Cards } from "../../utils/constants";
+import InfoCards from "../InfoCards";
 
 const WhyMinderySection = () => {
     return (

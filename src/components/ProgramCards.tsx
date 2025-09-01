@@ -31,7 +31,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
             </div>
 
             {/* Text side */}
-            <div className="flex flex-col justify-center rounded-2xl bg-white p-6 shadow-md">
+            <div className="flex flex-col justify-center rounded-lg bg-neutral-50 p-6 shadow-sm">
                 <h3 className="text-xl font-extrabold text-gray-900">
                     {title}
                 </h3>
@@ -44,7 +44,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
                         {tags.map((tag, i) => (
                             <span
                                 key={i}
-                                className="text-md rounded-full bg-gray-100/20 px-4 py-2 font-bold text-gray-700 shadow-sm"
+                                className="text-md rounded-full bg-white px-4 py-2 font-bold text-gray-700 shadow-sm"
                             >
                                 {tag}
                             </span>

@@ -1,5 +1,5 @@
-import Button from "./Button";
-import SmallCards from "./SmallCards";
+import Button from "../Button";
+import SmallCards from "../SmallCards";
 
 const Benefits = [
     { emoji: "🧠", label: "Improve", highlight: "Focus" },

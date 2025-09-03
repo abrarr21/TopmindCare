@@ -18,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({
     const baseClasses = "px-4 py-2 rounded-lg font-medium cursor-pointer ";
 
     const variantClasses: Record<ButtonVariant, string> = {
-        primary: "bg-violet-700 hover:bg-violet-800 text-white",
+        primary: "bg-violet-600 hover:bg-violet-700 text-white",
         secondary: "bg-green-400 hover:bg-green-500 text-white",
         tertiary: "bg-white hover:bg-neutral-100 text-purple-800",
     };

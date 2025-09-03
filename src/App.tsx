@@ -17,9 +17,9 @@ function App() {
         <>
             <div
                 className={cn(
-                    "min-h-screen w-full bg-neutral-50 px-4",
+                    "min-h-screen w-full px-4",
                     "sm:px-6",
-                    "lg:mx-auto lg:max-w-7xl lg:px-8",
+                    "lg:mx-auto lg:max-w-7xl lg:px-4",
                 )}
             >
                 <Navbar />

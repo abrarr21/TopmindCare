@@ -3,7 +3,7 @@ import Button from "../Button";
 
 const StartDownloadSection = () => {
     return (
-        <section className={cn("mx-auto mt-6 h-60 max-w-7xl p-4 md:mt-2")}>
+        <section className={cn("mx-auto mt-6 mb-2 h-60 max-w-7xl p-4 md:mt-2")}>
             <div className="rounded-lg bg-gradient-to-br from-purple-100/40 to-blue-100/40 p-4 shadow-md">
                 <h2 className="font-bold text-gray-900 md:text-2xl lg:text-4xl">
                     Start Your Child's Mindfulness Journey

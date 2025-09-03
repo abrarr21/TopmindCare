@@ -4,13 +4,15 @@ const FooterSection = () => {
     return (
         <footer
             className={cn(
-                "mt-6 w-full border-t border-gray-500/20 bg-neutral-200/30 py-6",
+                "mt-14 w-full border-t border-gray-500/20 bg-neutral-200/20 py-6",
                 "md:mt-1 md:max-w-7xl md:py-3",
             )}
         >
             <div
                 className={cn(
-                    "mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-7 md:flex-row",
+                    "mx-auto flex w-full flex-col items-center justify-between gap-6 px-2",
+                    "sm:max-w-7xl",
+                    "md:flex-row",
                 )}
             >
                 {/* Left: Logo / Website Name */}

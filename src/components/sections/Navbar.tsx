@@ -20,7 +20,7 @@ const Navbar = () => {
         <nav
             className={cn(
                 "fixed top-0 left-0 z-50 w-full border-b border-gray-500 bg-neutral-100/30 backdrop-blur-md transition-all duration-300",
-                scrolled && "shadow-md",
+                scrolled && "shadow-xl",
             )}
         >
             <div
@@ -54,7 +54,12 @@ const Navbar = () => {
                             {link}
                         </a>
                     ))}
-                    <Button variant="primary" className={cn("font-bold")}>
+                    <Button
+                        variant="primary"
+                        className={cn(
+                            "font-bold shadow-md shadow-neutral-800 hover:shadow-lg",
+                        )}
+                    >
                         Start Free
                     </Button>
                 </div>
@@ -63,7 +68,7 @@ const Navbar = () => {
                 <div className="md:hidden">
                     <Button
                         onClick={() => setOpen(!open)}
-                        className="rounded-full p-2 transition hover:bg-gray-800"
+                        className="rounded-full p-2 shadow-md shadow-black transition hover:bg-gray-800 hover:shadow-lg"
                     >
                         {open ? (
                             <p className="text-sm">

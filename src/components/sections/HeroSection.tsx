@@ -65,21 +65,27 @@ const HeroSection = () => {
 
                     <div
                         className={cn(
-                            "mx-auto mt-8 mb-5 flex w-[24rem] flex-row justify-center gap-3",
-                            "sm:mb-8 sm:gap-4",
+                            "mx-auto mt-8 mb-5 flex w-[18rem] flex-row justify-center gap-3",
+                            "sm:mb-8 sm:w-[24rem] sm:gap-4",
                             "md:mx-auto",
                             "lg:mx-0 lg:mb-6 lg:justify-start",
                         )}
                     >
                         <Button
                             variant="primary"
-                            className="rounded-xl py-3 shadow-md shadow-black/20 transition hover:shadow-lg"
+                            className={cn(
+                                "rounded-xl py-3 text-xs text-nowrap shadow-md shadow-black transition hover:shadow-lg",
+                                "sm:text-lg",
+                            )}
                         >
                             Start Free Trial
                         </Button>
                         <Button
                             variant="secondary"
-                            className="rounded-xl py-3 shadow-md shadow-black/20 transition hover:shadow-lg"
+                            className={cn(
+                                "rounded-xl py-3 text-xs text-nowrap shadow-md shadow-black transition hover:shadow-lg",
+                                "sm:text-lg",
+                            )}
                         >
                             Explore Program
                         </Button>
@@ -110,7 +116,7 @@ const HeroSection = () => {
                 {/* Floating Card */}
                 <div
                     className={cn(
-                        "absolute top-[135%] left-[15%] mx-auto mt-6 w-full max-w-sm",
+                        "absolute top-[135%] left-[18%] mx-auto mt-6 w-full max-w-sm",
                         "sm:left-[30%]",
                         "md:top-[120%] md:left-[35%]",
                         "lg:absolute lg:top-[53%] lg:right-[15%] lg:mt-0 lg:p-6",
@@ -121,6 +127,9 @@ const HeroSection = () => {
                             "max-w-[70%] -rotate-1 transform rounded-2xl bg-white px-1.5 py-3 shadow-md ring-1 ring-gray-100",
                             "lg:max-w-xs lg:-rotate-3 lg:px-4 lg:py-6",
                         )}
+                        style={{
+                            boxShadow: "-6px 6px 15px rgba(0,0,0, 0.15)",
+                        }}
                     >
                         <h3 className="font-bold text-gray-900">
                             Today's Journey
@@ -128,7 +137,6 @@ const HeroSection = () => {
                         <ul
                             className={cn(
                                 "mt-1.5 ml-3 list-inside list-disc space-y-1 text-sm text-gray-700",
-                                "",
                             )}
                         >
                             <li className="flex items-start gap-2">

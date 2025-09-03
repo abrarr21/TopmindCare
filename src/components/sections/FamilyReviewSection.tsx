@@ -17,7 +17,7 @@ const FamilyReviewSection = () => {
                     What Families Say
                 </h2>
 
-                <div className="md:justfy-evenly flex sm:gap-1 md:gap-2">
+                <div className="flex flex-col space-y-2 sm:flex-row sm:gap-1 md:justify-evenly md:gap-2">
                     {FamilyReviewData.map((fm, index) => (
                         <FamilyReviewCards
                             key={index}

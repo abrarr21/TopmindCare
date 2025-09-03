@@ -17,8 +17,9 @@ function App() {
         <>
             <div
                 className={cn(
-                    "min-h-screen w-full px-4",
-                    "sm:px-6",
+                    "mx-auto min-h-screen max-w-md px-4",
+                    "overflow-x-hidden",
+                    "sm:max-w-2xl sm:px-6",
                     "lg:mx-auto lg:max-w-7xl lg:px-4",
                 )}
             >

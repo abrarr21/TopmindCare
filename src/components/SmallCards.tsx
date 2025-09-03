@@ -17,11 +17,13 @@ const SmallCards = ({ items }: Props) => {
                 <div
                     key={index}
                     className={cn(
-                        "flex items-center justify-center gap-1 rounded-2xl bg-neutral-200/70 px-1.5 py-4 shadow-xl ring-1 ring-gray-100 md:px-2 md:py-2",
-                        "sm:w-auto sm:min-w-[80px] sm:gap-4",
+                        "flex items-center justify-center gap-1 rounded-2xl bg-neutral-200/70 py-4 shadow-xl ring-1 ring-gray-100 md:px-2 md:py-2",
+                        "sm:w-auto sm:min-w-[80px] sm:gap-4 sm:px-1.5",
                     )}
                 >
-                    <div className="text-md sm:text-lg">{item.emoji}</div>
+                    <div className={cn("text-xs", "sm:text-lg")}>
+                        {item.emoji}
+                    </div>
                     <div className="flex flex-col text-left leading-none">
                         <span className="text-xs text-gray-500 sm:text-sm">
                             {item.label}

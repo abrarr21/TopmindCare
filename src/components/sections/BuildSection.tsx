@@ -8,8 +8,9 @@ const BuildSection = () => {
             className={cn(
                 "mx-auto mt-12 h-auto max-w-full p-4",
                 "sm:h-[68vh] sm:max-w-2xl",
-                "md:h-[33vh] md:max-w-4xl",
-                "lg:h-[65vh] lg:max-w-7xl",
+                "md:h-[44vh] md:max-w-4xl",
+                "lg:h-[36vh] lg:max-w-7xl",
+                "xl:h-[52vh]",
             )}
         >
             <h2

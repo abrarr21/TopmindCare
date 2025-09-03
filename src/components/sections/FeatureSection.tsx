@@ -6,9 +6,11 @@ const FeatureSection = () => {
     return (
         <section
             className={cn(
-                "mt-10 flex w-full flex-col items-center px-1",
+                "mt-8 flex w-full flex-col items-center px-1",
                 "sm:mt-12 sm:items-center",
-                "lg:mt-20",
+                "lg:items-start",
+                "lg:mt-24",
+                "xl:mt-24",
             )}
         >
             <h3

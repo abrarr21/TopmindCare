@@ -103,7 +103,7 @@ const HeroSection = () => {
                     )}
                 >
                     <img
-                        src="https://i.pinimg.com/736x/34/00/13/340013c6e4e5d9553f5347cb5d05ab69.jpg"
+                        src="https://i.pinimg.com/1200x/b4/a9/ff/b4a9ffc3a761255066c343df590f3a06.jpg"
                         className="h-full w-full rounded-2xl object-cover shadow-lg"
                     />
                 </div>

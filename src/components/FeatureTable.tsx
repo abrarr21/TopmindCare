@@ -10,15 +10,9 @@ const FeatureTable = ({ title, features, className }: FeatureTableProps) => {
     return (
         <div
             className={cn(
-                // base (mobile-first)
-                "w-full overflow-hidden rounded-lg shadow-lg",
-
-                // sm (tablet)
+                "mx-auto max-w-[20rem] overflow-hidden rounded-lg shadow-lg",
                 "sm:w-[24rem] sm:flex-wrap",
-
-                // md (laptop/desktop)
                 "md:w-[23rem]",
-
                 className,
             )}
         >

@@ -4,8 +4,8 @@ const FooterSection = () => {
     return (
         <footer
             className={cn(
-                "mt-10 w-full border-t border-gray-500/20 bg-neutral-200/20 py-6",
-                "md:mt-1 md:max-w-7xl md:py-3",
+                "mt-20 w-full border-t border-gray-500/20 bg-neutral-200/20 px-1 py-6",
+                "md:mt-1 md:max-w-7xl md:py-3 lg:px-6",
             )}
         >
             <div
@@ -19,7 +19,7 @@ const FooterSection = () => {
                 <div className="">
                     <div
                         className={cn(
-                            "text-center text-sm font-bold text-gray-800",
+                            "text-md text-center font-bold text-gray-800",
                             "md:text-left md:text-xl",
                             "lg:text-3xl",
                         )}
@@ -40,8 +40,9 @@ const FooterSection = () => {
                 <div className={cn("flex flex-col text-gray-600")}>
                     <h6
                         className={cn(
-                            "text-center text-gray-600",
-                            "md:text-left",
+                            "text-center text-xs font-semibold text-gray-900/60",
+                            "sm:text-md",
+                            "md:text-md md:text-left",
                         )}
                     >
                         Contact
@@ -50,8 +51,8 @@ const FooterSection = () => {
                         <a
                             href="mailto:hello@mywebsite.com"
                             className={cn(
-                                "font-semibold text-purple-600 hover:text-purple-800",
-                                "md:text-sm",
+                                "text-xs font-semibold text-purple-600 hover:text-purple-800",
+                                "sm:text-sm",
                             )}
                         >
                             Email
@@ -61,8 +62,8 @@ const FooterSection = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className={cn(
-                                "font-semibold text-purple-600 hover:text-purple-800",
-                                "md:text-sm",
+                                "text-xs font-semibold text-purple-600 hover:text-purple-800",
+                                "sm:text-sm",
                             )}
                         >
                             Instagram
@@ -72,8 +73,8 @@ const FooterSection = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className={cn(
-                                "font-semibold text-purple-600 hover:text-purple-800",
-                                "md:text-sm",
+                                "text-xs font-semibold text-purple-600 hover:text-purple-800",
+                                "sm:text-sm",
                             )}
                         >
                             LinkedIn
@@ -85,8 +86,9 @@ const FooterSection = () => {
                 <div className={cn("flex flex-col text-gray-600")}>
                     <h6
                         className={cn(
-                            "text-center text-gray-600",
-                            "md:text-left",
+                            "text-center text-xs font-semibold text-gray-900/60",
+                            "sm:text-md",
+                            "md:text-md md:text-left",
                         )}
                     >
                         Legal
@@ -97,8 +99,8 @@ const FooterSection = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className={cn(
-                                "font-semibold text-purple-600 hover:text-purple-800",
-                                "md:text-sm",
+                                "text-xs font-semibold text-purple-600 hover:text-purple-700",
+                                "sm:text-sm",
                             )}
                         >
                             Privacy
@@ -108,8 +110,8 @@ const FooterSection = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className={cn(
-                                "font-semibold text-purple-600 hover:text-purple-800",
-                                "md:text-sm",
+                                "text-xs font-semibold text-purple-600 hover:text-purple-700",
+                                "sm:text-sm",
                             )}
                         >
                             Terms

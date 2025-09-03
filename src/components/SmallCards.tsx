@@ -17,10 +17,7 @@ const SmallCards = ({ items }: Props) => {
                 <div
                     key={index}
                     className={cn(
-                        // base: full width card
-                        "flex items-center justify-center gap-1 rounded-2xl bg-neutral-200/50 py-4 shadow-lg ring-1 ring-gray-100 md:px-1 md:py-2",
-
-                        // sm: allow cards to shrink but keep min width
+                        "flex items-center justify-center gap-1 rounded-2xl bg-neutral-200/70 px-1.5 py-4 shadow-xl ring-1 ring-gray-100 md:px-2 md:py-2",
                         "sm:w-auto sm:min-w-[80px] sm:gap-4",
                     )}
                 >

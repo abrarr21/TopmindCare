@@ -4,7 +4,12 @@ import InfoCards from "../InfoCards";
 
 const WhyMinderySection = () => {
     return (
-        <section className={cn("mx-auto mt-5 max-w-7xl px-4 py-12", "lg:mt-1")}>
+        <section
+            className={cn(
+                "mx-auto mt-14 max-w-7xl px-4 py-12 sm:mt-8",
+                "lg:mt-1",
+            )}
+        >
             <div>
                 {/* Heading */}
                 <h2
@@ -31,7 +36,7 @@ const WhyMinderySection = () => {
                 </p>
 
                 {/* Cards */}
-                <div className="grid sm:grid-cols-1 md:grid-cols-3 md:gap-4 lg:grid-cols-3 lg:gap-6">
+                <div className="grid gap-y-3 sm:grid-cols-1 md:grid-cols-3 md:gap-4 lg:grid-cols-3 lg:gap-6">
                     {Cards.map((card, index) => (
                         <InfoCards
                             key={index}

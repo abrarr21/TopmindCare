@@ -4,7 +4,7 @@ const FooterSection = () => {
     return (
         <footer
             className={cn(
-                "mt-14 w-full border-t border-gray-500/20 bg-neutral-200/20 py-6",
+                "mt-10 w-full border-t border-gray-500/20 bg-neutral-200/20 py-6",
                 "md:mt-1 md:max-w-7xl md:py-3",
             )}
         >

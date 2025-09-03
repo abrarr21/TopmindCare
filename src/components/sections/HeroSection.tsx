@@ -14,7 +14,7 @@ const HeroSection = () => {
         <section className="mx-auto w-full">
             <div
                 className={cn(
-                    "mx-auto mt-28 flex flex-col items-center gap-8 px-2",
+                    "relative mx-auto mt-28 flex flex-col items-center gap-8 px-2",
                     "sm:px-6",
                     "lg:mt-18 lg:h-[85vh] lg:max-w-7xl lg:flex-row lg:items-center lg:gap-12",
                 )}
@@ -38,9 +38,9 @@ const HeroSection = () => {
 
                     <h1
                         className={cn(
-                            "mt-2 max-w-sm self-center text-3xl leading-snug font-bold",
-                            "sm:text-4xl sm:leading-tight md:max-w-lg",
-                            "lg:mt-1 lg:max-w-xl lg:text-5xl lg:leading-[1]",
+                            "mt-2 max-w-sm text-center text-3xl leading-snug font-bold",
+                            "sm:max-w-lg sm:self-center sm:text-4xl sm:leading-tight",
+                            "lg:mt-1 lg:max-w-xl lg:text-left lg:text-5xl lg:leading-[1]",
                         )}
                     >
                         Mindfullness & Meditation for Kids (4 - 14)
@@ -48,16 +48,16 @@ const HeroSection = () => {
 
                     <div
                         className={cn(
-                            "mt-3 space-y-1 font-medium text-gray-600",
+                            "mt-3 max-w-sm space-y-1 text-center font-medium text-gray-600",
                             "sm:mt-1 sm:max-w-lg sm:self-center sm:text-lg",
-                            "lg:mt-2 lg:mb-4 lg:max-w-xl",
+                            "lg:mt-2 lg:mb-4 lg:max-w-xl lg:text-left",
                         )}
                     >
-                        <p>
+                        <p className="leading-tight">
                             Fun story-based meditation that build focus,
                             kindness and confidence.
                         </p>
-                        <p>
+                        <p className="leading-tight">
                             Safe, ad-free and crafted with child-development
                             experts.
                         </p>
@@ -97,13 +97,8 @@ const HeroSection = () => {
                 {/* Right Image / Placeholder */}
                 <div
                     className={cn(
-                        // Base
                         "h-92 w-full rounded-xl bg-gray-200",
-
-                        // Tablet
-                        "sm:h-72",
-
-                        // Desktop
+                        "sm:h-[28rem]",
                         "lg:h-[80%] lg:w-1/2",
                     )}
                 >
@@ -116,16 +111,16 @@ const HeroSection = () => {
                 {/* Floating Card */}
                 <div
                     className={cn(
-                        "absolute top-[135%] left-[18%] mx-auto mt-6 w-full max-w-sm",
-                        "sm:left-[30%]",
-                        "md:top-[120%] md:left-[35%]",
-                        "lg:absolute lg:top-[53%] lg:right-[15%] lg:mt-0 lg:p-6",
+                        "absolute top-[90%] left-[18%] mx-auto mt-6 w-full max-w-sm",
+                        "sm:top-[90%] sm:left-[30%]",
+                        "md:top-[90%] md:left-[34%]",
+                        "lg:top-[55%] lg:right-[8%] lg:mt-0 lg:p-6",
                     )}
                 >
                     <div
                         className={cn(
-                            "max-w-[70%] -rotate-1 transform rounded-2xl bg-white px-1.5 py-3 shadow-md ring-1 ring-gray-100",
-                            "lg:max-w-xs lg:-rotate-3 lg:px-4 lg:py-6",
+                            "max-w-[70%] -rotate-1 transform rounded-2xl bg-white/50 px-1.5 py-3 shadow-md ring-1 ring-gray-100 backdrop-blur-md",
+                            "lg:max-w-[80%] lg:-rotate-3 lg:px-3 lg:py-4",
                         )}
                         style={{
                             boxShadow: "-6px 6px 15px rgba(0,0,0, 0.15)",
@@ -139,7 +134,7 @@ const HeroSection = () => {
                                 "mt-1.5 ml-3 list-inside list-disc space-y-1 text-sm text-gray-700",
                             )}
                         >
-                            <li className="flex items-start gap-2">
+                            <li className="flex items-start gap-y-2">
                                 <span>🐉</span>
                                 <span>
                                     Dragon Breath{" "}

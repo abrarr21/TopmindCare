@@ -1,11 +1,14 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { cn } from "../../utils/cn";
 import { List, X } from "lucide-react";
 import Button from "../Button";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const logoLink = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -14,6 +17,14 @@ const Navbar = () => {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    useGSAP(() => {
+        gsap.fromTo(
+            logoLink.current,
+            { opacity: 0, y: -50 },
+            { opacity: 1, y: 0, duration: 1, ease: "power2.out" },
+        );
+    });
 
     const links = ["Why", "Programs", "Features", "For Parents", "FAQ"];
     return (
@@ -28,6 +39,7 @@ const Navbar = () => {
                     "mx-auto flex w-full items-center justify-between px-8 py-5",
                     "sm:max-w-7xl md:px-4 md:py-4 lg:px-8",
                 )}
+                ref={logoLink}
             >
                 {/* Logo */}
                 <div

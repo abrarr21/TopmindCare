@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { cn } from "../../utils/cn";
 import Button from "../Button";
 import SmallCards from "../SmallCards";
+import PopupForm from "../PopupForm";
 
 const Benefits = [
     { emoji: "🧠", label: "Improve", highlight: "Focus" },
@@ -10,6 +12,7 @@ const Benefits = [
 ];
 
 const HeroSection = () => {
+    const [showForm, setShowForm] = useState(false);
     return (
         <section className="mx-auto w-full">
             <div
@@ -77,6 +80,7 @@ const HeroSection = () => {
                                 "rounded-xl py-3 text-xs text-nowrap shadow-md shadow-black transition hover:shadow-lg",
                                 "sm:text-lg",
                             )}
+                            onClick={() => setShowForm(true)}
                         >
                             Start Free Trial
                         </Button>
@@ -165,6 +169,8 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
+
+            <PopupForm isOpen={showForm} onClose={() => setShowForm(false)} />
         </section>
     );
 };

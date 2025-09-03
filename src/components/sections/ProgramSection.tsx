@@ -7,7 +7,7 @@ const ProgramSection = () => {
                 <h3 className="text-4xl font-bold text-gray-900">
                     Programs for Every Age
                 </h3>
-                <p className="mt-4 mb-2 max-w-xl font-semibold text-gray-500">
+                <p className="mt-2 mb-2 max-w-xl font-semibold text-gray-500 lg:mt-4">
                     Pick a track or mix and match. Each programs grows with your
                     child.
                 </p>

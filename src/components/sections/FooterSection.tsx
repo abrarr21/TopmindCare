@@ -1,24 +1,56 @@
+import { cn } from "../../utils/cn";
+
 const FooterSection = () => {
     return (
-        <footer className="mt-12 w-full border-t border-gray-500/20 bg-neutral-200/50 py-6">
-            <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-7 md:flex-row">
+        <footer
+            className={cn(
+                "mt-6 w-full border-t border-gray-500/20 bg-neutral-200/30 py-6",
+                "md:mt-1 md:max-w-7xl md:py-3",
+            )}
+        >
+            <div
+                className={cn(
+                    "mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-7 md:flex-row",
+                )}
+            >
                 {/* Left: Logo / Website Name */}
-                <div>
-                    <div className="text-xl font-bold text-gray-800">
+                <div className="">
+                    <div
+                        className={cn(
+                            "text-center text-sm font-bold text-gray-800",
+                            "md:text-left md:text-xl",
+                            "lg:text-3xl",
+                        )}
+                    >
                         Topmind Care
                     </div>
-                    <p className="mt-2 text-sm font-semibold text-gray-500">
+                    <p
+                        className={cn(
+                            "mt-2 text-center text-xs font-semibold text-gray-500",
+                            "md:mt-1 md:text-left md:text-xs",
+                        )}
+                    >
                         Mindfulness for growing minds. &copy; 2025 Mindery Kids.
                     </p>
                 </div>
 
                 {/* Middle: Contact Links */}
-                <div className="flex flex-col text-gray-600">
-                    <h6 className="text-gray-600">Contact</h6>
+                <div className={cn("flex flex-col text-gray-600")}>
+                    <h6
+                        className={cn(
+                            "text-center text-gray-600",
+                            "md:text-left",
+                        )}
+                    >
+                        Contact
+                    </h6>
                     <div className="flex space-x-4">
                         <a
                             href="mailto:hello@mywebsite.com"
-                            className="font-semibold text-purple-600 hover:text-purple-800"
+                            className={cn(
+                                "font-semibold text-purple-600 hover:text-purple-800",
+                                "md:text-sm",
+                            )}
                         >
                             Email
                         </a>
@@ -26,7 +58,10 @@ const FooterSection = () => {
                             href="#"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="font-semibold text-purple-600 hover:text-purple-800"
+                            className={cn(
+                                "font-semibold text-purple-600 hover:text-purple-800",
+                                "md:text-sm",
+                            )}
                         >
                             Instagram
                         </a>
@@ -34,7 +69,10 @@ const FooterSection = () => {
                             href="#"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="font-semibold text-purple-600 hover:text-purple-800"
+                            className={cn(
+                                "font-semibold text-purple-600 hover:text-purple-800",
+                                "md:text-sm",
+                            )}
                         >
                             LinkedIn
                         </a>
@@ -42,14 +80,24 @@ const FooterSection = () => {
                 </div>
 
                 {/* Right: Legal Links */}
-                <div className="flex flex-col text-gray-600">
-                    <h6 className="text-gray-600">Legal</h6>
+                <div className={cn("flex flex-col text-gray-600")}>
+                    <h6
+                        className={cn(
+                            "text-center text-gray-600",
+                            "md:text-left",
+                        )}
+                    >
+                        Legal
+                    </h6>
                     <div className="flex space-x-4">
                         <a
                             href="#"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="font-semibold text-purple-600 hover:text-purple-800"
+                            className={cn(
+                                "font-semibold text-purple-600 hover:text-purple-800",
+                                "md:text-sm",
+                            )}
                         >
                             Privacy
                         </a>
@@ -57,7 +105,10 @@ const FooterSection = () => {
                             href="#"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="font-semibold text-purple-600 hover:text-purple-800"
+                            className={cn(
+                                "font-semibold text-purple-600 hover:text-purple-800",
+                                "md:text-sm",
+                            )}
                         >
                             Terms
                         </a>

@@ -1,13 +1,14 @@
+import { cn } from "../../utils/cn";
 import Button from "../Button";
 
 const StartDownloadSection = () => {
     return (
-        <section className="mx-auto mt-8 h-60 max-w-7xl p-4">
+        <section className={cn("mx-auto mt-6 h-60 max-w-7xl p-4 md:mt-2")}>
             <div className="rounded-lg bg-gradient-to-br from-purple-100/40 to-blue-100/40 p-4 shadow-md">
-                <h2 className="text-4xl font-bold text-gray-900">
+                <h2 className="font-bold text-gray-900 md:text-2xl lg:text-4xl">
                     Start Your Child's Mindfulness Journey
                 </h2>
-                <p className="mt-4 mb-5 text-gray-700">
+                <p className="mt-4 mb-5 text-gray-700 md:mt-2">
                     Try it free. Build Calm, Focus, and Kindness - one small
                     practice a day.
                 </p>

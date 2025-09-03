@@ -1,3 +1,4 @@
+import { cn } from "../../utils/cn";
 import Button from "../Button";
 import SmallCards from "../SmallCards";
 
@@ -10,16 +11,48 @@ const Benefits = [
 
 const HeroSection = () => {
     return (
-        <section className="w-full pt-18">
-            <div className="mx-auto mt-16 flex h-[85vh] max-w-7xl">
-                <div className="mt-5 h-[70%] w-[55%] p-4">
-                    <span className="rounded-full border bg-purple-200 px-2 py-2 font-bold text-purple-600 shadow-md shadow-purple-200">
-                        🌈Calm Minds, Happy Hearts
+        <section className="mx-auto w-full">
+            <div
+                className={cn(
+                    "mx-auto mt-28 flex flex-col items-center gap-8 px-2",
+                    "sm:px-6",
+                    "lg:mt-18 lg:h-[85vh] lg:max-w-7xl lg:flex-row lg:items-center lg:gap-12",
+                )}
+            >
+                {/* Left Content */}
+                <div
+                    className={cn(
+                        "flex w-full flex-col space-y-2",
+                        "lg:w-1/2 lg:space-y-3",
+                    )}
+                >
+                    <span
+                        className={cn(
+                            "self-center rounded-full border bg-purple-200 px-3 py-1.5 text-sm font-bold text-purple-600 shadow-md shadow-purple-200",
+                            "sm:text-md",
+                            "lg:self-start lg:py-1.5",
+                        )}
+                    >
+                        🌈 Calm Minds, Happy Hearts
                     </span>
-                    <h1 className="mt-4 max-w-xl text-5xl leading-14 font-bold">
+
+                    <h1
+                        className={cn(
+                            "mt-2 max-w-sm self-center text-3xl leading-snug font-bold",
+                            "sm:text-4xl sm:leading-tight md:max-w-lg",
+                            "lg:mt-1 lg:max-w-xl lg:text-5xl lg:leading-[1]",
+                        )}
+                    >
                         Mindfullness & Meditation for Kids (4 - 14)
                     </h1>
-                    <div className="mt-4 mb-4 font-semibold text-gray-500">
+
+                    <div
+                        className={cn(
+                            "mt-3 space-y-1 font-medium text-gray-600",
+                            "sm:mt-1 sm:max-w-lg sm:self-center sm:text-lg",
+                            "lg:mt-2 lg:mb-4 lg:max-w-xl",
+                        )}
+                    >
                         <p>
                             Fun story-based meditation that build focus,
                             kindness and confidence.
@@ -29,7 +62,15 @@ const HeroSection = () => {
                             experts.
                         </p>
                     </div>
-                    <div className="mt-5 mb-6 flex gap-4">
+
+                    <div
+                        className={cn(
+                            "mx-auto mt-8 mb-5 flex w-[24rem] flex-row justify-center gap-3",
+                            "sm:mb-8 sm:gap-4",
+                            "md:mx-auto",
+                            "lg:mx-0 lg:mb-6 lg:justify-start",
+                        )}
+                    >
                         <Button
                             variant="primary"
                             className="rounded-xl py-3 shadow-md shadow-black/20 transition hover:shadow-lg"
@@ -46,13 +87,50 @@ const HeroSection = () => {
 
                     <SmallCards items={Benefits} />
                 </div>
-                <div className="h-[80%] w-[45%] rounded-xl bg-gray-200"></div>
-                <div className="absolute top-[53%] right-[28%] p-6">
-                    <div className="max-w-sm -rotate-3 transform rounded-2xl bg-white p-5 shadow-md ring-1 ring-gray-100">
+
+                {/* Right Image / Placeholder */}
+                <div
+                    className={cn(
+                        // Base
+                        "h-92 w-full rounded-xl bg-gray-200",
+
+                        // Tablet
+                        "sm:h-72",
+
+                        // Desktop
+                        "lg:h-[80%] lg:w-1/2",
+                    )}
+                >
+                    <img
+                        src="https://i.pinimg.com/736x/34/00/13/340013c6e4e5d9553f5347cb5d05ab69.jpg"
+                        className="h-full w-full rounded-2xl object-cover shadow-lg"
+                    />
+                </div>
+
+                {/* Floating Card */}
+                <div
+                    className={cn(
+                        "absolute top-[135%] left-[15%] mx-auto mt-6 w-full max-w-sm",
+                        "sm:left-[30%]",
+                        "md:top-[120%] md:left-[35%]",
+                        "lg:absolute lg:top-[53%] lg:right-[15%] lg:mt-0 lg:p-6",
+                    )}
+                >
+                    <div
+                        className={cn(
+                            "max-w-[70%] -rotate-1 transform rounded-2xl bg-white px-1.5 py-3 shadow-md ring-1 ring-gray-100",
+                            "lg:max-w-xs lg:-rotate-3 lg:px-4 lg:py-6",
+                        )}
+                    >
                         <h3 className="font-bold text-gray-900">
                             Today's Journey
                         </h3>
-                        <ul className="mt-3 ml-7 list-inside list-disc space-y-2 text-sm text-gray-700">
+                        <ul
+                            className={cn(
+                                "mt-1.5 ml-3 list-inside list-disc space-y-1 text-sm text-gray-700",
+                                "",
+                            )}
+                        >
                             <li className="flex items-start gap-2">
                                 <span>🐉</span>
                                 <span>

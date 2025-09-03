@@ -1,21 +1,35 @@
 import type { Benefit } from "../types";
+import { cn } from "../utils/cn";
 
 type Props = { items: Benefit[] };
 
 const SmallCards = ({ items }: Props) => {
     return (
-        <div className="flex gap-5">
+        <div
+            className={cn(
+                "flex w-full justify-evenly gap-4",
+                "sm:flex sm:flex-row sm:gap-3",
+                "md:flex-nowrap md:gap-1",
+                "lg:mt-2 lg:justify-start lg:gap-9",
+            )}
+        >
             {items.map((item, index) => (
                 <div
                     key={index}
-                    className="flex min-w-[125px] items-center justify-center gap-4 rounded-2xl bg-white px-2 py-3 shadow-lg ring-1 ring-gray-100"
+                    className={cn(
+                        // base: full width card
+                        "flex items-center justify-center gap-1 rounded-2xl bg-neutral-200/50 py-4 shadow-lg ring-1 ring-gray-100 md:px-1 md:py-2",
+
+                        // sm: allow cards to shrink but keep min width
+                        "sm:w-auto sm:min-w-[80px] sm:gap-4",
+                    )}
                 >
-                    <div className="text-lg">{item.emoji}</div>
+                    <div className="text-md sm:text-lg">{item.emoji}</div>
                     <div className="flex flex-col text-left leading-none">
-                        <span className="text-sm text-gray-500">
+                        <span className="text-xs text-gray-500 sm:text-sm">
                             {item.label}
                         </span>
-                        <span className="text-xl font-bold text-gray-900">
+                        <span className="text-xs font-bold text-gray-900 sm:text-lg">
                             {item.highlight}
                         </span>
                     </div>

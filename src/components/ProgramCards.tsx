@@ -35,7 +35,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
                 <h3 className="text-xl font-extrabold text-gray-900">
                     {title}
                 </h3>
-                <p className="mt-2 font-semibold text-gray-600">
+                <p className="mt-2 text-gray-600 lg:font-semibold">
                     {description}
                 </p>
 

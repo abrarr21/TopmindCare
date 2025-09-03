@@ -1,16 +1,37 @@
+import { cn } from "../../utils/cn";
 import { FeatureContent } from "../../utils/constants";
 import FeatureTable from "../FeatureTable";
 
 const FeatureSection = () => {
     return (
-        <section className="mx-auto mt-12 max-w-7xl p-4">
-            <h3 className="mb-5 text-xl font-bold text-gray-900">
+        <section
+            className={cn(
+                "mt-10 flex w-full flex-col items-center px-1",
+                "sm:mt-12 sm:items-center",
+                "lg:mt-20",
+            )}
+        >
+            <h3
+                className={cn(
+                    "text-md mb-5 font-extrabold text-gray-900",
+                    "sm:text-xl",
+                    "md:text-center md:text-2xl",
+                    "lg:text-left lg:text-3xl",
+                )}
+            >
                 Why Choose Mindery Kids Over Others?
             </h3>
 
-            <div className="flex">
+            <div
+                className={cn(
+                    "flex flex-col",
+                    "sm:justify-center sm:gap-4",
+                    "md:gap-4 md:self-center",
+                    "lg:flex-row lg:gap-10 lg:overflow-hidden",
+                )}
+            >
                 {FeatureContent.map((table, index) => (
-                    <div key={index}>
+                    <div key={index} className="w-92">
                         <FeatureTable
                             title={table.title}
                             features={table.features}

@@ -32,7 +32,7 @@ const FAQaccordion = (props: AccordionProps) => {
                         <span>{open === item.id ? "−" : "+"}</span>
                     </button>
                     {open === item.id && (
-                        <div className="border-t border-gray-100 p-4 text-gray-700 transition-all duration-300 ease-in-out">
+                        <div className="border-t border-gray-100 px-4 py-1.5 text-gray-700 transition-all duration-300 ease-in-out">
                             {item.content}
                         </div>
                     )}

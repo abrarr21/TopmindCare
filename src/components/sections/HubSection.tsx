@@ -1,3 +1,4 @@
+import { cn } from "../../utils/cn";
 import HubCards from "../HubCards";
 
 const Buttons = [
@@ -8,10 +9,17 @@ const Buttons = [
 
 const HubSection = () => {
     return (
-        <section className="mx-auto mt-6 h-60 max-w-7xl rounded-xl p-4">
+        <section
+            className={cn(
+                "mx-auto mt-3 h-72 max-w-sm rounded-lg p-4",
+                "sm:mt-3 sm:h-64 sm:max-w-full sm:rounded-xl sm:p-6",
+                "lg:mt-2 lg:h-72 lg:max-w-7xl lg:rounded-2xl lg:p-8",
+            )}
+        >
             <HubCards
                 title="Parent & Teacher Hub"
                 description="Practical guides, printable routines, and progress insights so you can support mindfulness at home and school."
+                className={cn("text-xs", "sm:text-sm", "lg:text-lg")}
                 buttons={Buttons}
             />
         </section>

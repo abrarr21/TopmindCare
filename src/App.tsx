@@ -10,11 +10,18 @@ import ProgramSection from "./components/sections/ProgramSection";
 import StartDownloadSection from "./components/sections/StartDownloadSection";
 import WhyMinderySection from "./components/sections/WhyMinderySection";
 import FooterSection from "./components/sections/FooterSection";
+import { cn } from "./utils/cn";
 
 function App() {
     return (
         <>
-            <div className="bg-neutral-50">
+            <div
+                className={cn(
+                    "min-h-screen w-full bg-neutral-50 px-4",
+                    "sm:px-6",
+                    "lg:mx-auto lg:max-w-7xl lg:px-8",
+                )}
+            >
                 <Navbar />
                 <HeroSection />
                 <WhyMinderySection />
